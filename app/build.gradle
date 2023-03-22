@@ -51,12 +51,11 @@ android {
 }
 
 dependencies {
-
+    def room_version = "2.5.0"
     def swiperefreshlayout_version = "1.1.0"
     def retrofit_version = "2.9.0"
     def retrofitgson_version = "2.9.0"
     def okhttplogging_version = "4.10.0"
-    def room_version = "2.5.0"
     def paging_version = "3.2.0-alpha03"
     def circleImageview_version = "3.1.0"
     def imagepicker_version = "2.1"

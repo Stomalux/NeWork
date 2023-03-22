@@ -1,7 +1,8 @@
-package ru.netology.nework
+package ru.netology.nework.viewmodels
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ru.netology.nework.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
