@@ -1,5 +1,19 @@
 package ru.netology.nework.repository
 
+import android.content.Context
+import com.google.gson.Gson
+import dagger.hilt.android.qualifiers.ApplicationContext
+import ru.netology.nework.R
+import ru.netology.nework.api.ApiService
+import ru.netology.nework.errors.ErrorResponse
+import ru.netology.nework.errors.NetworkError
+import ru.netology.nework.errors.UnknownError
+import ru.netology.nework.models.user.User
+import java.io.IOException
+import javax.inject.Inject
+
+private val gson = Gson()
+
 class CommonRepositoryImpl @Inject constructor(
     private val apiService: ApiService,
     @ApplicationContext
