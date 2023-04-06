@@ -51,11 +51,12 @@ android {
 }
 
 dependencies {
-    def room_version = "2.5.0"
+
     def swiperefreshlayout_version = "1.1.0"
     def retrofit_version = "2.9.0"
     def retrofitgson_version = "2.9.0"
     def okhttplogging_version = "4.10.0"
+   // def room_version = "2.5.0"
     def paging_version = "3.2.0-alpha03"
     def circleImageview_version = "3.1.0"
     def imagepicker_version = "2.1"
@@ -66,18 +67,27 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation "androidx.fragment:fragment-ktx:1.5.5"
-    implementation "de.hdodenhof:circleimageview:$circleImageview_version"
-    implementation "com.github.bumptech.glide:glide:$glide_version"
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt 'com.google.dagger:hilt-compiler:2.44.2'
+
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt 'com.google.dagger:hilt-compiler:2.44.2'
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swiperefreshlayout_version"
+
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitgson_version"
+  
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttplogging_version"
+    //Paging
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+    //Camera, Gallery, etc.
     implementation "com.github.dhaval2404:imagepicker:$imagepicker_version"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swiperefreshlayout_version"
+    //Круговое представление изображения
+    implementation "de.hdodenhof:circleimageview:$circleImageview_version"
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    //YandexMap
     implementation 'com.yandex.android:maps.mobile:4.2.2-lite'
-
 }

@@ -13,6 +13,7 @@ sealed class AppError(errorMessage: String) : RuntimeException(errorMessage) {
         }
     }
 }
+
 data class ErrorResponse (val reason: String) : AppError(reason)
 object RegistrationError : AppError("A user with this username already exists")
 object NetworkError : AppError("A network error has occurred")

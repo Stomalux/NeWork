@@ -21,7 +21,6 @@ import ru.netology.nework.models.post.Post
 import ru.netology.nework.models.post.PostCreateRequest
 import ru.netology.nework.models.post.PostDataSource
 import ru.netology.nework.models.post.PostListItem
-import ru.netology.nework.models.FeedModelState
 import ru.netology.nework.repository.PostRepository
 import ru.netology.nework.utils.SingleLiveEvent
 import java.io.File

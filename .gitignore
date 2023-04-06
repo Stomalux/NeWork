@@ -25,11 +25,11 @@ captures/
 .cxx
 
 ### NetBeans ###
-nbproject/private/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
 ### VS Code ###
 .vscode/
@@ -44,10 +44,7 @@ nbdist/
 *.rar
 
 ### Gradle ###
-!gradle/wrapper/gradle-wrapper.jar
-
-### Firebase ###
-google-services.json
+!/gradle/wrapper/gradle-wrapper.jar
 
 ##Map key##
 maps.properties
