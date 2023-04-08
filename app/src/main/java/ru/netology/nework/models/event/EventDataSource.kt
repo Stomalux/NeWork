@@ -17,8 +17,7 @@ class EventDataSource @Inject constructor(
     override suspend fun load(params: LoadParams<Long>): LoadResult<Long, Event> {
         try {
             maxId = apiService.getEventsLatest(1).body()?.firstOrNull()?.id ?: maxId
-            //т.к. нет метода, возвращающего в диапазоне [ОТ]:[ДО], вычислим приблизительное количество ранее загруженных событий
-            //(приблизительно - т.к. id хоть и отсортированы, но не строго последовательны)
+
             approximateQuantity = maxId.minus(params.key ?: 0L)
 
             if (approximateQuantity < 0) approximateQuantity = 0L

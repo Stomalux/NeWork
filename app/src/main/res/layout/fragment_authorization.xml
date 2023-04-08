@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/card_margin"
-    android:orientation="vertical"
-    tools:context=".ui.AuthorizationFragment"
     android:background="@color/green_super_light"
-    >
+    android:orientation="vertical"
+    tools:context=".ui.AuthorizationFragment">
 
     <TextView
         android:id="@+id/headerTextView"
@@ -68,7 +67,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/card_margin"
-        android:text="@string/sign_in"
-        />
+        android:text="@string/sign_in" />
 
 </LinearLayout>

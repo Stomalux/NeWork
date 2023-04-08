@@ -290,6 +290,6 @@ class EventDiffCallback : DiffUtil.ItemCallback<EventListItem>() {
         return oldItem == newItem
     }
 
-    //не применять анимацию (убрать "мерцание")
+    //убрать "мерцание"
     override fun getChangePayload(oldItem: EventListItem, newItem: EventListItem): Any = Unit
 }

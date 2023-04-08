@@ -22,8 +22,7 @@
         app:iconTint="@color/icon_button_tint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:checked="false"
-        />
+        android:checked="false"/>
 
     <TextView
         android:id="@+id/currentPosition"

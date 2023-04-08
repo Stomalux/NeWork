@@ -21,8 +21,7 @@ class PostDataSource @Inject constructor(
     override suspend fun load(params: LoadParams<Long>): LoadResult<Long, Post> {
         val authUserId = appAuth.getAuthorizedUserId()
         try {
-            //т.к. нет метода, возвращающего в диапазоне [ОТ]:[ДО], вычислим приблизительное количество ранее загруженных постов
-            //(приблизительно - т.к. id хоть и отсортированы, но не строго последовательны)
+
             if (filterBy != 0L) {
                 maxUserWallId = if (filterBy == authUserId)
                     apiService.getWallLatest(1).body()?.firstOrNull()?.id ?: maxUserWallId
